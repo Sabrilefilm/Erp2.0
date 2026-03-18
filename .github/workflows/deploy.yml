@@ -1,0 +1,58 @@
+name: Deploy Laravel App
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - uses: actions/checkout@v4
+    
+    - name: Setup PHP
+      uses: shivammathur/setup-php@v2
+      with:
+        php-version: '8.2'
+        extensions: mbstring, xml, bcmath, curl, zip, mysql, pdo_mysql
+        coverage: none
+    
+    - name: Copy environment file
+      run: cp .env.example .env
+    
+    - name: Install dependencies
+      run: composer install --no-progress --no-interaction --prefer-dist --optimize-autoloader
+    
+    - name: Generate application key
+      run: php artisan key:generate
+    
+    - name: Install Node dependencies
+      run: npm ci
+    
+    - name: Build assets
+      run: npm run build
+    
+    - name: Run tests
+      run: php artisan test --no-interaction
+    
+    - name: Create deployment package
+      run: |
+        tar -czf deployment.tar.gz \
+        --exclude=node_modules \
+        --exclude=vendor \
+        --exclude=.git \
+        --exclude=tests \
+        --exclude=storage/logs/* \
+        --exclude=storage/framework/cache/* \
+        --exclude=storage/framework/sessions/* \
+        --exclude=storage/framework/views/* \
+        .
+    
+    - name: Upload deployment package
+      uses: actions/upload-artifact@v4
+      with:
+        name: deployment-package
+        path: deployment.tar.gz

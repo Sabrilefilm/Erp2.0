@@ -1,0 +1,6 @@
+@import './ultra-ui.css';
+@import './ultra-premium.css';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
