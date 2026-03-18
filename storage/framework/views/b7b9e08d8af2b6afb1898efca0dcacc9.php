@@ -169,6 +169,47 @@
     position: relative;
     overflow: hidden;
 }
+
+/* Message agence + campagne TikTok (compact, texte petit) */
+.db-agency-box {
+    border-radius: 14px;
+    border: 1px solid rgba(255,255,255,0.08);
+    background: rgba(255,255,255,0.03);
+    padding: 12px 14px;
+}
+.db-agency-box-title {
+    font-size: 11px;
+    font-weight: 700;
+    color: rgba(255,255,255,0.45);
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.db-agency-box-content {
+    margin-top: 8px;
+    font-size: 12px;
+    line-height: 1.45;
+    color: rgba(255,255,255,0.8);
+}
+.db-agency-box-content .muted {
+    color: rgba(255,255,255,0.35);
+    font-size: 11px;
+}
+.db-agency-box-actions {
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.db-mini-link {
+    font-size: 11px;
+    font-weight: 600;
+    color: #00d4ff;
+    text-decoration: none;
+}
+.db-mini-link:hover { color: #7dd3fc; text-decoration: none; }
 .db-encadrement::before {
     content: '';
     position: absolute;
@@ -547,6 +588,34 @@
             </a>
         </div>
     </div>
+
+    
+    <div class="db-fade mt-2 grid grid-cols-1 md:grid-cols-2 gap-3">
+        <div class="db-agency-box">
+            <div class="db-agency-box-title"><span aria-hidden="true">💬</span> Message de l'agence</div>
+            <div class="db-agency-box-content">
+                <?php if(!empty($messageAgence)): ?>
+                    <div class="font-semibold text-white/90"><?php echo e($messageAgence->titre); ?></div>
+                    <div class="muted mt-1"><?php echo e(\Illuminate\Support\Str::limit(trim($messageAgence->contenu), 140)); ?></div>
+                <?php else: ?>
+                    <div class="muted">Aucun message pour le moment.</div>
+                <?php endif; ?>
+            </div>
+            <div class="db-agency-box-actions">
+                <a class="db-mini-link" href="<?php echo e(route('regles.index')); ?>">Voir tous les messages</a>
+            </div>
+        </div>
+
+        <div class="db-agency-box">
+            <div class="db-agency-box-title"><span aria-hidden="true">🎯</span> Campagne TikTok</div>
+            <div class="db-agency-box-content">
+                <div class="muted">Accède aux contenus et consignes liés aux campagnes TikTok.</div>
+            </div>
+            <div class="db-agency-box-actions">
+                <a class="db-mini-link" href="<?php echo e(route('formations.index', $hasCatalogueTiktok ? ['catalogue' => 'tiktok'] : [])); ?>">Ouvrir</a>
+            </div>
+        </div>
+    </div>
 </div>
 
 <?php else: ?>
@@ -662,6 +731,34 @@
                 <div class="qa-icon"><span class="text-lg">💬</span></div>
                 <div class="qa-label">Message agence</div>
             </a>
+        </div>
+    </div>
+
+    
+    <div class="db-fade mt-2 grid grid-cols-1 md:grid-cols-2 gap-3">
+        <div class="db-agency-box">
+            <div class="db-agency-box-title"><span aria-hidden="true">💬</span> Message de l'agence</div>
+            <div class="db-agency-box-content">
+                <?php if(!empty($messageAgence)): ?>
+                    <div class="font-semibold text-white/90"><?php echo e($messageAgence->titre); ?></div>
+                    <div class="muted mt-1"><?php echo e(\Illuminate\Support\Str::limit(trim($messageAgence->contenu), 160)); ?></div>
+                <?php else: ?>
+                    <div class="muted">Aucun message pour le moment.</div>
+                <?php endif; ?>
+            </div>
+            <div class="db-agency-box-actions">
+                <a class="db-mini-link" href="<?php echo e(route('regles.index')); ?>">Voir tous les messages</a>
+            </div>
+        </div>
+
+        <div class="db-agency-box">
+            <div class="db-agency-box-title"><span aria-hidden="true">🎯</span> Campagne TikTok</div>
+            <div class="db-agency-box-content">
+                <div class="muted">Accède aux contenus et consignes liés aux campagnes TikTok.</div>
+            </div>
+            <div class="db-agency-box-actions">
+                <a class="db-mini-link" href="<?php echo e(route('formations.index', $hasCatalogueTiktok ? ['catalogue' => 'tiktok'] : [])); ?>">Ouvrir</a>
+            </div>
         </div>
     </div>
 

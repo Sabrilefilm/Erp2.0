@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\AnnonceController;
 use App\Http\Controllers\AideController;
 use App\Http\Controllers\DocumentsOfficielsController;
 use App\Http\Controllers\Auth\LoginController;
@@ -188,7 +189,15 @@ Route::middleware(['auth', 'compte.non.bloque', 'must.change.password', 'contrat
     Route::get('/messagerie-groupe', [MessagerieController::class, 'groupeForm'])->name('messagerie.groupe');
     Route::post('/messagerie-groupe', [MessagerieController::class, 'groupeSend'])->name('messagerie.groupe.send');
 
-    // Règles
+    // Annonces & Campagnes TikTok
+    Route::get('/annonces', [AnnonceController::class, 'index'])->name('annonces.index');
+    Route::get('/annonces/create', [AnnonceController::class, 'create'])->name('annonces.create');
+    Route::post('/annonces', [AnnonceController::class, 'store'])->name('annonces.store');
+    Route::get('/annonces/{annonce}/edit', [AnnonceController::class, 'edit'])->name('annonces.edit');
+    Route::put('/annonces/{annonce}', [AnnonceController::class, 'update'])->name('annonces.update');
+    Route::delete('/annonces/{annonce}', [AnnonceController::class, 'destroy'])->name('annonces.destroy');
+
+    // Règles (ancien système - conservé pour compatibilité)
     Route::get('/regles', [RegleController::class, 'index'])->name('regles.index');
     Route::get('/regles/create', [RegleController::class, 'create'])->name('regles.create');
     Route::post('/regles', [RegleController::class, 'store'])->name('regles.store');

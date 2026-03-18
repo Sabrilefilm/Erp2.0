@@ -403,9 +403,9 @@
                     <span class="app-sidebar-nav-icon"><svg fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M12 8v13m0-13V6a2 2 0 112 2h-2zm0 0V5.5A2.5 2.5 0 109.5 8H12zm-7 4h14M5 12a2 2 0 110-4h14a2 2 0 110 4M5 12v7a2 2 0 002 2h10a2 2 0 002-2v-7"/></svg></span>
                     <span>Récompenses</span>
                 </a>
-                <a href="<?php echo e(route('regles.index')); ?>" class="app-sidebar-nav-item <?php echo e(request()->routeIs('regles.*') ? 'is-active' : ''); ?>">
+                <a href="<?php echo e(route('annonces.index')); ?>" class="app-sidebar-nav-item <?php echo e(request()->routeIs('annonces.*') ? 'is-active' : ''); ?>">
                     <span class="app-sidebar-nav-icon"><svg fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"/></svg></span>
-                    <span>Le Message de l'agence</span>
+                    <span>Annonces & Campagnes</span>
                 </a>
                 <a href="<?php echo e(route('formations.index')); ?>" class="app-sidebar-nav-item <?php echo e(request()->routeIs('formations.*') ? 'is-active' : ''); ?>">
                     <span class="app-sidebar-nav-icon"><svg fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z"/></svg></span>
