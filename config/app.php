@@ -40,6 +40,7 @@ return [
         Illuminate\Validation\ValidationServiceProvider::class,
         Illuminate\View\ViewServiceProvider::class,
         App\Providers\AppServiceProvider::class,
+        App\Providers\RouteServiceProvider::class,
         Maatwebsite\Excel\ExcelServiceProvider::class,
     ],
     'aliases' => Facade::defaultAliases()->merge([

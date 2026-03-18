@@ -33,7 +33,8 @@
     29 => 'Termwind\\Laravel\\TermwindServiceProvider',
     30 => 'Spatie\\LaravelIgnition\\IgnitionServiceProvider',
     31 => 'App\\Providers\\AppServiceProvider',
-    32 => 'Maatwebsite\\Excel\\ExcelServiceProvider',
+    32 => 'App\\Providers\\RouteServiceProvider',
+    33 => 'Maatwebsite\\Excel\\ExcelServiceProvider',
   ),
   'eager' => 
   array (
@@ -55,7 +56,8 @@
     15 => 'Termwind\\Laravel\\TermwindServiceProvider',
     16 => 'Spatie\\LaravelIgnition\\IgnitionServiceProvider',
     17 => 'App\\Providers\\AppServiceProvider',
-    18 => 'Maatwebsite\\Excel\\ExcelServiceProvider',
+    18 => 'App\\Providers\\RouteServiceProvider',
+    19 => 'Maatwebsite\\Excel\\ExcelServiceProvider',
   ),
   'deferred' => 
   array (

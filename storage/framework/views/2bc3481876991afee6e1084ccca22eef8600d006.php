@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
     <meta name="csrf-token" content="<?php echo e(csrf_token()); ?>">
     <title>Connexion — Ultra</title>
-    <?php echo $__env->make('partials.head-assets', array_diff_key(get_defined_vars(), ['__data' => 1, '__path' => 1]))->render(); ?>
+    <?php echo $__env->make('partials.head-assets', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
     <link rel="stylesheet" href="<?php echo e(asset('css/login-modern.css')); ?>">
 </head>
 <body class="min-h-screen bg-[#0a0e27]">
