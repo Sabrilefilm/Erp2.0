@@ -14642,3 +14642,119 @@
 #19 /Users/sabri/Documents/ERP Unions V2/artisan(9): Illuminate\\Foundation\\Application->handleCommand(Object(Symfony\\Component\\Console\\Input\\ArgvInput))
 #20 {main}
 "} 
+[2026-03-18 15:33:07] local.ERROR: Target class [App\Http\Middleware\TrustProxies] does not exist. {"exception":"[object] (Illuminate\\Contracts\\Container\\BindingResolutionException(code: 0): Target class [App\\Http\\Middleware\\TrustProxies] does not exist. at /Users/sabri/Documents/ERP Unions V2/vendor/laravel/framework/src/Illuminate/Container/Container.php:914)
+[stacktrace]
+#0 /Users/sabri/Documents/ERP Unions V2/vendor/laravel/framework/src/Illuminate/Container/Container.php(795): Illuminate\\Container\\Container->build('App\\\\Http\\\\Middle...')
+#1 /Users/sabri/Documents/ERP Unions V2/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(986): Illuminate\\Container\\Container->resolve('App\\\\Http\\\\Middle...', Array, true)
+#2 /Users/sabri/Documents/ERP Unions V2/vendor/laravel/framework/src/Illuminate/Container/Container.php(731): Illuminate\\Foundation\\Application->resolve('App\\\\Http\\\\Middle...', Array)
+#3 /Users/sabri/Documents/ERP Unions V2/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(971): Illuminate\\Container\\Container->make('App\\\\Http\\\\Middle...', Array)
+#4 /Users/sabri/Documents/ERP Unions V2/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(172): Illuminate\\Foundation\\Application->make('App\\\\Http\\\\Middle...')
+#5 /Users/sabri/Documents/ERP Unions V2/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(119): Illuminate\\Pipeline\\Pipeline->{closure:{closure:Illuminate\\Pipeline\\Pipeline::carry():158}:159}(Object(Illuminate\\Http\\Request))
+#6 /Users/sabri/Documents/ERP Unions V2/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(175): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#7 /Users/sabri/Documents/ERP Unions V2/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(144): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#8 /Users/sabri/Documents/ERP Unions V2/public/index.php(16): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#9 /Users/sabri/Documents/ERP Unions V2/public/index.php(19): {closure:/Users/sabri/Documents/ERP Unions V2/public/index.php:13}()
+#10 /Users/sabri/Documents/ERP Unions V2/vendor/laravel/framework/src/Illuminate/Foundation/resources/server.php(16): require_once('/Users/sabri/Do...')
+#11 {main}
+
+[previous exception] [object] (ReflectionException(code: -1): Class \"App\\Http\\Middleware\\TrustProxies\" does not exist at /Users/sabri/Documents/ERP Unions V2/vendor/laravel/framework/src/Illuminate/Container/Container.php:912)
+[stacktrace]
+#0 /Users/sabri/Documents/ERP Unions V2/vendor/laravel/framework/src/Illuminate/Container/Container.php(912): ReflectionClass->__construct('App\\\\Http\\\\Middle...')
+#1 /Users/sabri/Documents/ERP Unions V2/vendor/laravel/framework/src/Illuminate/Container/Container.php(795): Illuminate\\Container\\Container->build('App\\\\Http\\\\Middle...')
+#2 /Users/sabri/Documents/ERP Unions V2/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(986): Illuminate\\Container\\Container->resolve('App\\\\Http\\\\Middle...', Array, true)
+#3 /Users/sabri/Documents/ERP Unions V2/vendor/laravel/framework/src/Illuminate/Container/Container.php(731): Illuminate\\Foundation\\Application->resolve('App\\\\Http\\\\Middle...', Array)
+#4 /Users/sabri/Documents/ERP Unions V2/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(971): Illuminate\\Container\\Container->make('App\\\\Http\\\\Middle...', Array)
+#5 /Users/sabri/Documents/ERP Unions V2/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(172): Illuminate\\Foundation\\Application->make('App\\\\Http\\\\Middle...')
+#6 /Users/sabri/Documents/ERP Unions V2/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(119): Illuminate\\Pipeline\\Pipeline->{closure:{closure:Illuminate\\Pipeline\\Pipeline::carry():158}:159}(Object(Illuminate\\Http\\Request))
+#7 /Users/sabri/Documents/ERP Unions V2/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(175): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#8 /Users/sabri/Documents/ERP Unions V2/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(144): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#9 /Users/sabri/Documents/ERP Unions V2/public/index.php(16): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#10 /Users/sabri/Documents/ERP Unions V2/public/index.php(19): {closure:/Users/sabri/Documents/ERP Unions V2/public/index.php:13}()
+#11 /Users/sabri/Documents/ERP Unions V2/vendor/laravel/framework/src/Illuminate/Foundation/resources/server.php(16): require_once('/Users/sabri/Do...')
+#12 {main}
+"} 
+[2026-03-18 15:33:07] local.ERROR: Target class [App\Http\Middleware\TrustProxies] does not exist. {"exception":"[object] (Illuminate\\Contracts\\Container\\BindingResolutionException(code: 0): Target class [App\\Http\\Middleware\\TrustProxies] does not exist. at /Users/sabri/Documents/ERP Unions V2/vendor/laravel/framework/src/Illuminate/Container/Container.php:914)
+[stacktrace]
+#0 /Users/sabri/Documents/ERP Unions V2/vendor/laravel/framework/src/Illuminate/Container/Container.php(795): Illuminate\\Container\\Container->build('App\\\\Http\\\\Middle...')
+#1 /Users/sabri/Documents/ERP Unions V2/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(986): Illuminate\\Container\\Container->resolve('App\\\\Http\\\\Middle...', Array, true)
+#2 /Users/sabri/Documents/ERP Unions V2/vendor/laravel/framework/src/Illuminate/Container/Container.php(731): Illuminate\\Foundation\\Application->resolve('App\\\\Http\\\\Middle...', Array)
+#3 /Users/sabri/Documents/ERP Unions V2/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(971): Illuminate\\Container\\Container->make('App\\\\Http\\\\Middle...', Array)
+#4 /Users/sabri/Documents/ERP Unions V2/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(255): Illuminate\\Foundation\\Application->make('App\\\\Http\\\\Middle...')
+#5 /Users/sabri/Documents/ERP Unions V2/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(213): Illuminate\\Foundation\\Http\\Kernel->terminateMiddleware(Object(Illuminate\\Http\\Request), Object(Illuminate\\Http\\Response))
+#6 /Users/sabri/Documents/ERP Unions V2/public/index.php(18): Illuminate\\Foundation\\Http\\Kernel->terminate(Object(Illuminate\\Http\\Request), Object(Illuminate\\Http\\Response))
+#7 /Users/sabri/Documents/ERP Unions V2/public/index.php(19): {closure:/Users/sabri/Documents/ERP Unions V2/public/index.php:13}()
+#8 /Users/sabri/Documents/ERP Unions V2/vendor/laravel/framework/src/Illuminate/Foundation/resources/server.php(16): require_once('/Users/sabri/Do...')
+#9 {main}
+
+[previous exception] [object] (ReflectionException(code: -1): Class \"App\\Http\\Middleware\\TrustProxies\" does not exist at /Users/sabri/Documents/ERP Unions V2/vendor/laravel/framework/src/Illuminate/Container/Container.php:912)
+[stacktrace]
+#0 /Users/sabri/Documents/ERP Unions V2/vendor/laravel/framework/src/Illuminate/Container/Container.php(912): ReflectionClass->__construct('App\\\\Http\\\\Middle...')
+#1 /Users/sabri/Documents/ERP Unions V2/vendor/laravel/framework/src/Illuminate/Container/Container.php(795): Illuminate\\Container\\Container->build('App\\\\Http\\\\Middle...')
+#2 /Users/sabri/Documents/ERP Unions V2/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(986): Illuminate\\Container\\Container->resolve('App\\\\Http\\\\Middle...', Array, true)
+#3 /Users/sabri/Documents/ERP Unions V2/vendor/laravel/framework/src/Illuminate/Container/Container.php(731): Illuminate\\Foundation\\Application->resolve('App\\\\Http\\\\Middle...', Array)
+#4 /Users/sabri/Documents/ERP Unions V2/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(971): Illuminate\\Container\\Container->make('App\\\\Http\\\\Middle...', Array)
+#5 /Users/sabri/Documents/ERP Unions V2/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(255): Illuminate\\Foundation\\Application->make('App\\\\Http\\\\Middle...')
+#6 /Users/sabri/Documents/ERP Unions V2/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(213): Illuminate\\Foundation\\Http\\Kernel->terminateMiddleware(Object(Illuminate\\Http\\Request), Object(Illuminate\\Http\\Response))
+#7 /Users/sabri/Documents/ERP Unions V2/public/index.php(18): Illuminate\\Foundation\\Http\\Kernel->terminate(Object(Illuminate\\Http\\Request), Object(Illuminate\\Http\\Response))
+#8 /Users/sabri/Documents/ERP Unions V2/public/index.php(19): {closure:/Users/sabri/Documents/ERP Unions V2/public/index.php:13}()
+#9 /Users/sabri/Documents/ERP Unions V2/vendor/laravel/framework/src/Illuminate/Foundation/resources/server.php(16): require_once('/Users/sabri/Do...')
+#10 {main}
+"} 
+[2026-03-18 15:35:35] local.ERROR: Target class [App\Http\Middleware\TrustProxies] does not exist. {"exception":"[object] (Illuminate\\Contracts\\Container\\BindingResolutionException(code: 0): Target class [App\\Http\\Middleware\\TrustProxies] does not exist. at /Users/sabri/Documents/ERP Unions V2/vendor/laravel/framework/src/Illuminate/Container/Container.php:891)
+[stacktrace]
+#0 /Users/sabri/Documents/ERP Unions V2/vendor/laravel/framework/src/Illuminate/Container/Container.php(770): Illuminate\\Container\\Container->build('App\\\\Http\\\\Middle...')
+#1 /Users/sabri/Documents/ERP Unions V2/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(881): Illuminate\\Container\\Container->resolve('App\\\\Http\\\\Middle...', Array, true)
+#2 /Users/sabri/Documents/ERP Unions V2/vendor/laravel/framework/src/Illuminate/Container/Container.php(706): Illuminate\\Foundation\\Application->resolve('App\\\\Http\\\\Middle...', Array)
+#3 /Users/sabri/Documents/ERP Unions V2/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(866): Illuminate\\Container\\Container->make('App\\\\Http\\\\Middle...', Array)
+#4 /Users/sabri/Documents/ERP Unions V2/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(169): Illuminate\\Foundation\\Application->make('App\\\\Http\\\\Middle...')
+#5 /Users/sabri/Documents/ERP Unions V2/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(116): Illuminate\\Pipeline\\Pipeline->{closure:{closure:Illuminate\\Pipeline\\Pipeline::carry():155}:156}(Object(Illuminate\\Http\\Request))
+#6 /Users/sabri/Documents/ERP Unions V2/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(165): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#7 /Users/sabri/Documents/ERP Unions V2/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(134): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#8 /Users/sabri/Documents/ERP Unions V2/public/index.php(16): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#9 /Users/sabri/Documents/ERP Unions V2/public/index.php(19): {closure:/Users/sabri/Documents/ERP Unions V2/public/index.php:13}()
+#10 /Users/sabri/Documents/ERP Unions V2/vendor/laravel/framework/src/Illuminate/Foundation/resources/server.php(16): require_once('/Users/sabri/Do...')
+#11 {main}
+
+[previous exception] [object] (ReflectionException(code: -1): Class \"App\\Http\\Middleware\\TrustProxies\" does not exist at /Users/sabri/Documents/ERP Unions V2/vendor/laravel/framework/src/Illuminate/Container/Container.php:889)
+[stacktrace]
+#0 /Users/sabri/Documents/ERP Unions V2/vendor/laravel/framework/src/Illuminate/Container/Container.php(889): ReflectionClass->__construct('App\\\\Http\\\\Middle...')
+#1 /Users/sabri/Documents/ERP Unions V2/vendor/laravel/framework/src/Illuminate/Container/Container.php(770): Illuminate\\Container\\Container->build('App\\\\Http\\\\Middle...')
+#2 /Users/sabri/Documents/ERP Unions V2/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(881): Illuminate\\Container\\Container->resolve('App\\\\Http\\\\Middle...', Array, true)
+#3 /Users/sabri/Documents/ERP Unions V2/vendor/laravel/framework/src/Illuminate/Container/Container.php(706): Illuminate\\Foundation\\Application->resolve('App\\\\Http\\\\Middle...', Array)
+#4 /Users/sabri/Documents/ERP Unions V2/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(866): Illuminate\\Container\\Container->make('App\\\\Http\\\\Middle...', Array)
+#5 /Users/sabri/Documents/ERP Unions V2/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(169): Illuminate\\Foundation\\Application->make('App\\\\Http\\\\Middle...')
+#6 /Users/sabri/Documents/ERP Unions V2/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(116): Illuminate\\Pipeline\\Pipeline->{closure:{closure:Illuminate\\Pipeline\\Pipeline::carry():155}:156}(Object(Illuminate\\Http\\Request))
+#7 /Users/sabri/Documents/ERP Unions V2/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(165): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#8 /Users/sabri/Documents/ERP Unions V2/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(134): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#9 /Users/sabri/Documents/ERP Unions V2/public/index.php(16): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#10 /Users/sabri/Documents/ERP Unions V2/public/index.php(19): {closure:/Users/sabri/Documents/ERP Unions V2/public/index.php:13}()
+#11 /Users/sabri/Documents/ERP Unions V2/vendor/laravel/framework/src/Illuminate/Foundation/resources/server.php(16): require_once('/Users/sabri/Do...')
+#12 {main}
+"} 
+[2026-03-18 15:35:36] local.ERROR: Target class [App\Http\Middleware\TrustProxies] does not exist. {"exception":"[object] (Illuminate\\Contracts\\Container\\BindingResolutionException(code: 0): Target class [App\\Http\\Middleware\\TrustProxies] does not exist. at /Users/sabri/Documents/ERP Unions V2/vendor/laravel/framework/src/Illuminate/Container/Container.php:891)
+[stacktrace]
+#0 /Users/sabri/Documents/ERP Unions V2/vendor/laravel/framework/src/Illuminate/Container/Container.php(770): Illuminate\\Container\\Container->build('App\\\\Http\\\\Middle...')
+#1 /Users/sabri/Documents/ERP Unions V2/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(881): Illuminate\\Container\\Container->resolve('App\\\\Http\\\\Middle...', Array, true)
+#2 /Users/sabri/Documents/ERP Unions V2/vendor/laravel/framework/src/Illuminate/Container/Container.php(706): Illuminate\\Foundation\\Application->resolve('App\\\\Http\\\\Middle...', Array)
+#3 /Users/sabri/Documents/ERP Unions V2/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(866): Illuminate\\Container\\Container->make('App\\\\Http\\\\Middle...', Array)
+#4 /Users/sabri/Documents/ERP Unions V2/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(239): Illuminate\\Foundation\\Application->make('App\\\\Http\\\\Middle...')
+#5 /Users/sabri/Documents/ERP Unions V2/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(203): Illuminate\\Foundation\\Http\\Kernel->terminateMiddleware(Object(Illuminate\\Http\\Request), Object(Illuminate\\Http\\Response))
+#6 /Users/sabri/Documents/ERP Unions V2/public/index.php(18): Illuminate\\Foundation\\Http\\Kernel->terminate(Object(Illuminate\\Http\\Request), Object(Illuminate\\Http\\Response))
+#7 /Users/sabri/Documents/ERP Unions V2/public/index.php(19): {closure:/Users/sabri/Documents/ERP Unions V2/public/index.php:13}()
+#8 /Users/sabri/Documents/ERP Unions V2/vendor/laravel/framework/src/Illuminate/Foundation/resources/server.php(16): require_once('/Users/sabri/Do...')
+#9 {main}
+
+[previous exception] [object] (ReflectionException(code: -1): Class \"App\\Http\\Middleware\\TrustProxies\" does not exist at /Users/sabri/Documents/ERP Unions V2/vendor/laravel/framework/src/Illuminate/Container/Container.php:889)
+[stacktrace]
+#0 /Users/sabri/Documents/ERP Unions V2/vendor/laravel/framework/src/Illuminate/Container/Container.php(889): ReflectionClass->__construct('App\\\\Http\\\\Middle...')
+#1 /Users/sabri/Documents/ERP Unions V2/vendor/laravel/framework/src/Illuminate/Container/Container.php(770): Illuminate\\Container\\Container->build('App\\\\Http\\\\Middle...')
+#2 /Users/sabri/Documents/ERP Unions V2/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(881): Illuminate\\Container\\Container->resolve('App\\\\Http\\\\Middle...', Array, true)
+#3 /Users/sabri/Documents/ERP Unions V2/vendor/laravel/framework/src/Illuminate/Container/Container.php(706): Illuminate\\Foundation\\Application->resolve('App\\\\Http\\\\Middle...', Array)
+#4 /Users/sabri/Documents/ERP Unions V2/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(866): Illuminate\\Container\\Container->make('App\\\\Http\\\\Middle...', Array)
+#5 /Users/sabri/Documents/ERP Unions V2/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(239): Illuminate\\Foundation\\Application->make('App\\\\Http\\\\Middle...')
+#6 /Users/sabri/Documents/ERP Unions V2/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(203): Illuminate\\Foundation\\Http\\Kernel->terminateMiddleware(Object(Illuminate\\Http\\Request), Object(Illuminate\\Http\\Response))
+#7 /Users/sabri/Documents/ERP Unions V2/public/index.php(18): Illuminate\\Foundation\\Http\\Kernel->terminate(Object(Illuminate\\Http\\Request), Object(Illuminate\\Http\\Response))
+#8 /Users/sabri/Documents/ERP Unions V2/public/index.php(19): {closure:/Users/sabri/Documents/ERP Unions V2/public/index.php:13}()
+#9 /Users/sabri/Documents/ERP Unions V2/vendor/laravel/framework/src/Illuminate/Foundation/resources/server.php(16): require_once('/Users/sabri/Do...')
+#10 {main}
+"} 
